@@ -101,10 +101,7 @@ article {
 }
 
 article .meta {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: 40px;
 }
 
 img {
@@ -178,6 +175,7 @@ blockquote::before {
 code[class*="language-"],
 pre[class*="language-"] {
   font-size: 14px;
+  white-space: inherit;
 }
 
 .html-content a {

@@ -8,7 +8,7 @@ import Menu from "../components/menu"
 const TutorialsPage = ({ data: { tutorials } }) => (
   <Layout>
     <SEO title="Tutorials" />
-    <Menu style={{ marginTop: 5 }} prefix="/tutorials" data={tutorials.edges} />
+    <Menu prefix="/tutorials" data={tutorials.edges} />
   </Layout>
 )
 

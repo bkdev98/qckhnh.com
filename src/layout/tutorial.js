@@ -14,7 +14,7 @@ const TutorialLayout = ({ data: { tutorials, article, prev, next } }) => (
       {article.frontmatter.thumbnail && <img alt={article.frontmatter.title} src={article.frontmatter.thumbnail} />}
       <div className="meta">
         <h1>{article.frontmatter.title}</h1>
-        <span>{article.frontmatter.date}</span>
+        <i>Published on {article.frontmatter.date}</i>
       </div>
       <div className="html-content" dangerouslySetInnerHTML={{ __html: article.html }} />
     </article>
