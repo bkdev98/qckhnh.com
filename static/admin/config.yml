@@ -1,0 +1,51 @@
+backend:
+  name: git-gateway
+
+media_folder: static/assets
+public_folder: assets
+publish_mode: editorial_workflow
+
+slug: { encoding: ascii, clean_accents: true }
+
+collections:
+  - name: articles
+    label: Cuộc sống
+    folder: static/articles
+    create: true
+    fields:
+      - { name: title, label: Tiêu đề }
+      - { name: description, label: Mô tả ngắn, widget: text, required: false }
+      # - { name: tag, label: Thẻ bài viết, widget: string, required: false }
+      - { name: thumbnail, label: Ảnh bìa, widget: image, required: false }
+      - { name: body, label: Nội dung, widget: markdown, required: false }
+      - { name: date, label: Ngày đăng, widget: date, format: YYYY-MM-DD }
+  - name: tutorials
+    label: Học thuật
+    folder: static/tutorials
+    create: true
+    fields:
+      - { name: title, label: Tiêu đề }
+      - { name: description, label: Mô tả ngắn, widget: text, required: false }
+      # - { name: tag, label: Thẻ bài viết, widget: string, required: false }
+      - { name: thumbnail, label: Ảnh bìa, widget: image, required: false }
+      - { name: body, label: Nội dung, widget: markdown, required: false }
+      - { name: date, label: Ngày đăng, widget: date, format: YYYY-MM-DD }
+      - {
+          name: "serie",
+          label: "Loạt bài",
+          widget: "relation",
+          required: false,
+          collection: "series",
+          searchFields: ["title"],
+          valueField: "title",
+          displayFields: ["title"],
+        }
+  - name: series
+    label: Loạt bài
+    folder: static/series
+    create: true
+    fields:
+      - { name: title, label: Tiêu đề }
+      - { name: description, label: Mô tả ngắn, widget: text, required: false }
+      - { name: thumbnail, label: Ảnh bìa, widget: image, required: false }
+      - { name: date, label: Ngày đăng, widget: date, format: YYYY-MM-DD }
