@@ -77,12 +77,31 @@ exports.createPages = ({ graphql, actions }) => {
             next,
           },
         });
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve('./src/layout/blog.js'),
+          context: {
+            slug: node.fields.slug,
+            prev,
+            next,
+          },
+        });
       });
       tutorials.edges.forEach(({ node }, index) => {
         const prev = index === 0 ? null : tutorials.edges[index - 1].node.fields.slug
         const next = index === tutorials.edges.length - 1 ? null : tutorials.edges[index + 1].node.fields.slug
         createPage({
           path: '/tutorials' + node.fields.slug,
+          component: path.resolve('./src/layout/tutorial.js'),
+          context: {
+            slug: node.fields.slug,
+            serie: node.frontmatter.serie || 'no-serie',
+            prev,
+            next,
+          },
+        });
+        createPage({
+          path: node.fields.slug,
           component: path.resolve('./src/layout/tutorial.js'),
           context: {
             slug: node.fields.slug,
