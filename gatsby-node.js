@@ -31,6 +31,18 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
+        projects: allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/projects/" } }
+          sort: { fields: [frontmatter___date], order: DESC }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
         tutorials: allMarkdownRemark(
           filter: { fileAbsolutePath: { regex: "/tutorials/" } }
           sort: { fields: [frontmatter___date], order: DESC }
@@ -64,7 +76,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `).then(result => {
-      const { articles, tutorials, series } = result.data;
+      const { articles, tutorials, series, projects } = result.data;
       articles.edges.forEach(({ node }, index) => {
         const prev = index === 0 ? null : articles.edges[index - 1].node.fields.slug
         const next = index === articles.edges.length - 1 ? null : articles.edges[index + 1].node.fields.slug
@@ -80,6 +92,19 @@ exports.createPages = ({ graphql, actions }) => {
         createPage({
           path: node.fields.slug,
           component: path.resolve('./src/layout/blog.js'),
+          context: {
+            slug: node.fields.slug,
+            prev,
+            next,
+          },
+        });
+      });
+      projects.edges.forEach(({ node }, index) => {
+        const prev = index === 0 ? null : projects.edges[index - 1].node.fields.slug
+        const next = index === projects.edges.length - 1 ? null : projects.edges[index + 1].node.fields.slug
+        createPage({
+          path: '/projects' + node.fields.slug,
+          component: path.resolve('./src/layout/project.js'),
           context: {
             slug: node.fields.slug,
             prev,
