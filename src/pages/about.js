@@ -16,7 +16,7 @@ const AboutPage = () => {
       <SEO title="About" />
       <div className="about">
         <p style={{ textDecoration: 'line-through' }}>I'm not a fan of softwares. I just try to do something when I'm still here.</p>
-        <p>Anyway, I'm a developer, and I do stuff on my 💻. I used to be a freelancer, working on UI/UX and branding stuff before mainstream coding.</p>
+        <p>Anyway, I'm a full-stack developer. I used to be a freelancer, working on UI/UX and branding stuff before mainstream coding.</p>
         <p>I founded my first tech company <a href="https://innoteq.vn">Innoteq Co., Ltd</a>, which provide tech solutions for your real-life problems.</p>
         <p>I also run an one-man digital studio at <a href="https://quocs.com">Quocs.com</a>, in case you got a project in mind and I'd love to hear everything about it.</p>
         <p>
