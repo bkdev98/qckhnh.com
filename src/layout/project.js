@@ -8,7 +8,11 @@ import "./style.css"
 
 const ProjectLayout = ({ data: { projects, project, prev, next } }) => (
   <Layout>
-    <SEO title={project.frontmatter.title} />
+    <SEO
+      title={project.frontmatter.title}
+      description={project.frontmatter.description}
+      thumbnail={project.frontmatter.thumbnail}
+    />
     <Menu prefix="/projects" data={projects.edges} />
     <article>
       {project.frontmatter.thumbnail && <img alt={project.frontmatter.title} src={project.frontmatter.thumbnail} />}

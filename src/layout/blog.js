@@ -8,7 +8,11 @@ import "./style.css"
 
 const BlogLayout = ({ data: { articles, article, prev, next } }) => (
   <Layout>
-    <SEO title={article.frontmatter.title} />
+    <SEO
+      title={article.frontmatter.title}
+      description={article.frontmatter.description}
+      thumbnail={article.frontmatter.thumbnail}
+    />
     <Menu prefix="/blog" data={articles.edges} />
     <article>
       {article.frontmatter.thumbnail && <img alt={article.frontmatter.title} src={article.frontmatter.thumbnail} />}
