@@ -9,7 +9,7 @@ const Header = () => (
       <li><Link partiallyActive={true} to="/blog" activeClassName="active">blog</Link></li>
       <li><Link partiallyActive={true} to="/projects" activeClassName="active">projects</Link></li>
       <li><Link partiallyActive={true} to="/about" activeClassName="active">about</Link></li>
-      <li><Link partiallyActive={true} to="/contact" activeClassName="active">contact</Link></li>
+      <li><Link partiallyActive={true} to="/contact" activeClassName="active">connect</Link></li>
     </ul>
   </header>
 )

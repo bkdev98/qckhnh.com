@@ -192,3 +192,8 @@ pre[class*="language-"] {
   padding-left: 0.75em;
   border-left: 0.25em solid #f99;
 }
+
+.about a {
+  color: #333;
+  font-weight: bold;
+}
