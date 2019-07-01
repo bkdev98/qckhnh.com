@@ -13,7 +13,7 @@ const TutorialLayout = ({ data: { tutorials, article, prev, next, serie, sameSer
       description={article.frontmatter.description}
       thumbnail={article.frontmatter.thumbnail}
     />
-    <Menu prefix="/tutorials" data={tutorials.edges} />
+    <Menu prefix="/tutorials" data={tutorials.edges} selected={article.id} />
     <article>
       {article.frontmatter.thumbnail && <img alt={article.frontmatter.title} src={article.frontmatter.thumbnail} />}
       <div className="meta">
@@ -76,6 +76,7 @@ export const artice = graphql`
     }
     article: markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      id
       frontmatter {
         title
         description

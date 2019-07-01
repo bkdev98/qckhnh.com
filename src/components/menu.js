@@ -1,8 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 
-const Menu = ({ data, prefix, ...props }) => {
+const Menu = ({ data, prefix, selected, ...props }) => {
   const [numToShow, setNumToShow] = useState(5);
+
+  useEffect(() => {
+    if (selected) {
+      const index = data.findIndex(item => item.node.id === selected);
+      if (index && index > numToShow - 1) {
+        setNumToShow(index + 1)
+      }
+    }
+  }, [])
 
   return (
     <div {...props}>

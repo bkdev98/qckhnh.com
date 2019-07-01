@@ -13,7 +13,7 @@ const ProjectLayout = ({ data: { projects, project, prev, next } }) => (
       description={project.frontmatter.description}
       thumbnail={project.frontmatter.thumbnail}
     />
-    <Menu prefix="/projects" data={projects.edges} />
+    <Menu prefix="/projects" data={projects.edges} selected={project.id} />
     <article>
       {project.frontmatter.thumbnail && <img alt={project.frontmatter.title} src={project.frontmatter.thumbnail} />}
       <span style={{ marginRight: 20 }}>{project.frontmatter.title}</span>
@@ -48,6 +48,7 @@ export const project = graphql`
     }
     project: markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      id
       frontmatter {
         title
         description
