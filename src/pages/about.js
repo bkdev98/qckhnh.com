@@ -6,7 +6,9 @@ import SEO from "../components/seo"
 const experiences = [
   `Flutter, NetlifyCMS, Webpack, TypeScript, Vue`,
   `, Express, MongoDB, Socket.io, Styled Components`,
-  `, Ant Design, Material UI, Angular, Redux, Wordpress...`,
+  `, Ant Design, Material UI, Angular, Redux, Wordpress`,
+  `, Ruby on Rails, Adonis JS, Phoenix Framework, Laravel, PostgreSQL`,
+  `, C/C++, Java, .NET, MSSQL, Python.`,
 ]
 
 const AboutPage = () => {
