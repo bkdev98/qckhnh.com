@@ -20,6 +20,16 @@ const Timestamp = ({ time }) => {
   );
 };
 
+const data = [
+  {
+    time: 'July 17, 2019',
+    text: `Working remotely 🏝. A bit busy with both side and client projects, 4 at a time 🤷🏻‍. I have a crush on someone, and this feeling is wonderful, as it once was.`,
+  }, {
+    time: 'Jun 28, 2019',
+    text: `I got depressed more often, can't write much. But I can still work on a new project. This project is gonna be a big one, an updated version of the offline POS I developed last year. I will finish it, no matter what happens.`,
+  },
+]
+
 const NowPage = () => {
   const [categories, setCategories] = useState([])
   const [loading, setLoading] = useState(false)
@@ -44,8 +54,8 @@ const NowPage = () => {
     <Layout>
       <SEO title="Now" />
       <h3>What I'm doing now</h3>
-      <i>Last updated Jun 28, 2019.</i>
-      <p>I got depressed more often, can't write much. But I can still work on a new project. This project is gonna be a big one, an updated version of the offline POS I developed last year. I will finish it, no matter what happens.</p>
+      <i>Last updated {data[0].time}.</i>
+      <p>{data[0].text}</p>
       <br />
       <h3>Today tasks</h3>
       {loading && <i>Crunching latest data...</i>}
