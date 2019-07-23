@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
+// import { Link } from 'gatsby'
 
 import Layout from "../layout"
 import SEO from "../components/seo"
@@ -59,6 +60,9 @@ const TracksPage = () => {
         )
       })}
       {error && <p>Cannot get tracks data now.</p>}
+      {/* <div style={{ marginTop: 10 }}>
+        <Link to='/' className='nav'>← back</Link>
+      </div> */}
     </Layout>
   )
 }

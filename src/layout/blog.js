@@ -22,8 +22,8 @@ const BlogLayout = ({ data: { articles, article, prev, next } }) => (
       </div>
       <div className="html-content" dangerouslySetInnerHTML={{ __html: article.html }} />
     </article>
-    {prev && <Link className="nav" to={'/blog' + prev.fields.slug}>previous</Link>}
-    {next && <Link className="nav" to={'/blog' + next.fields.slug}>next</Link>}
+    {prev && <Link className="nav" to={'/blog' + prev.fields.slug}>← previous</Link>}
+    {next && <Link className="nav" to={'/blog' + next.fields.slug}>next →</Link>}
   </Layout>
 )
 

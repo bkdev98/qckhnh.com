@@ -28,8 +28,8 @@ const TutorialLayout = ({ data: { tutorials, article, prev, next, serie, sameSer
         <Menu prefix="/tutorials" data={sameSerie ? sameSerie.edges : []} />
       </div>
     )}
-    {prev && <Link className="nav" to={'/tutorials' + prev.fields.slug}>previous</Link>}
-    {next && <Link className="nav" to={'/tutorials' + next.fields.slug}>next</Link>}
+    {prev && <Link className="nav" to={'/tutorials' + prev.fields.slug}>← previous</Link>}
+    {next && <Link className="nav" to={'/tutorials' + next.fields.slug}>next →</Link>}
   </Layout>
 )
 

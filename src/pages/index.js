@@ -7,8 +7,10 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Link partiallyActive={true} className="nav" to="/now" activeClassName="active">now</Link>
-    <Link partiallyActive={true} className="nav" to="/tracks" activeClassName="active">tracks</Link>
+    <blockquote>
+      Encumbered forever by desire and ambition.
+      There's a hunger still unsatisfied.
+    </blockquote>
   </Layout>
 )
 

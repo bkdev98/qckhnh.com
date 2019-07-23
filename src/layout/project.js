@@ -21,8 +21,8 @@ const ProjectLayout = ({ data: { projects, project, prev, next } }) => (
       <span>{project.frontmatter.description}</span>
       <div className="html-content" dangerouslySetInnerHTML={{ __html: project.html }} />
     </article>
-    {prev && <Link className="nav" to={'/projects' + prev.fields.slug}>previous</Link>}
-    {next && <Link className="nav" to={'/projects' + next.fields.slug}>next</Link>}
+    {prev && <Link className="nav" to={'/projects' + prev.fields.slug}>← previous</Link>}
+    {next && <Link className="nav" to={'/projects' + next.fields.slug}>next →</Link>}
   </Layout>
 )
 

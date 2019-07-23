@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 import moment from "moment"
+// import { Link } from 'gatsby'
 
 import Layout from "../layout"
 import SEO from "../components/seo"
@@ -54,6 +55,9 @@ const NowPage = () => {
     <Layout>
       <SEO title="Now" />
       <h3>What I'm doing now</h3>
+      <div>
+        <img alt='avatar' style={{ maxWidth: 200 }} src='/assets/avatar.jpg' />
+      </div>
       <i>Last updated {data[0].time}.</i>
       <p>{data[0].text}</p>
       <br />
@@ -80,6 +84,9 @@ const NowPage = () => {
           {categories[selected].activities.map(item => <i key={item} style={{ marginRight: 20 }}>{item}</i>)}
         </div>
       )}
+      {/* <div style={{ marginTop: 10 }}>
+        <Link to='/' className='nav'>← back</Link>
+      </div> */}
     </Layout>
   )
 }
