@@ -69,10 +69,10 @@ const DemoSolutionReactHooks = ({ showDelay }) => {
   const [selected, setSelected] = useState(null);
 
   const movies = [
-    { id: "1", name: "Synecdoche, New York", url: "http://www.mocky.io/v2/5d379b553100006925b07984" },
-    { id: "2", name: "Lost In Translation", url: "http://www.mocky.io/v2/5d379b973100009a38b07986" },
-    { id: "3", name: "A Single Man", url: "http://www.mocky.io/v2/5d379bae3100003d95b07988" },
-    { id: "4", name: "Melancholia", url: "http://www.mocky.io/v2/5d379bc43100003d95b07989" }
+    { id: "1", name: "Synecdoche, New York", url: "https://www.mocky.io/v2/5d379b553100006925b07984" },
+    { id: "2", name: "Lost In Translation", url: "https://www.mocky.io/v2/5d379b973100009a38b07986" },
+    { id: "3", name: "A Single Man", url: "https://www.mocky.io/v2/5d379bae3100003d95b07988" },
+    { id: "4", name: "Melancholia", url: "https://www.mocky.io/v2/5d379bc43100003d95b07989" }
   ]
 
   return (
