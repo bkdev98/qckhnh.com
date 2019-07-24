@@ -12,7 +12,7 @@ export const LabHeader = () => (
   <>
     <SEO title="Lab" />
     <h3>Phòng thí nghiệm</h3>
-    {/* <p>Giải quyết vấn đề thực tế bằng những thí nghiệm chim chuột.</p> */}
+    <p>Giải quyết vấn đề thực tế bằng những thí nghiệm chim chuột.</p>
     {data.map(({ title, url }) => {
       return (
         <Link className='link' activeClassName='link-active' key={title} to={url}>

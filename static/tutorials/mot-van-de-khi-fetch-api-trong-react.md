@@ -171,7 +171,7 @@ const MovieDetail = ({ url, showDelay }) => {
       })
 
     /**
-     * Hàm trả về (cleanup) trong useEffect sẽ được gọi trước khi component unmount.
+     * Hàm trả về (cleanup) trong useEffect sẽ được gọi khi component rerender.
      * Tương ứng với lifecycle componentWillUnmount trong Class Components.
      */
     return function cleanup() {
