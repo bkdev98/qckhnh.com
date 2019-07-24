@@ -103,6 +103,7 @@ main .link-active {
   letter-spacing: 2px;
   font-weight: 800;
   font-style: normal;
+  margin-top: 5px;
 }
 
 article {

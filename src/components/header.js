@@ -21,6 +21,7 @@ const Header = () => (
       <li><Link partiallyActive={true} to="/tutorials" activeClassName="active">tutorials</Link></li>
       <li><Link partiallyActive={true} to="/blog" activeClassName="active">blog</Link></li>
       <li><Link partiallyActive={true} to="/projects" activeClassName="active">projects</Link></li>
+      <li><Link partiallyActive={true} to="/lab" activeClassName="active">lab</Link></li>
       <li><Link partiallyActive={true} to="/tracks" activeClassName="active">tracks</Link></li>
       <li><Link partiallyActive={true} to="/movies" activeClassName="active">movies</Link></li>
       <li><Link partiallyActive={true} to="/about" activeClassName="active">about</Link></li>
