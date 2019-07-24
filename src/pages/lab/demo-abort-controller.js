@@ -18,7 +18,7 @@ const DemoAbortControllerPage = () => {
       />
       <img alt="Demo AbortController" src="/assets/abort-controller.png" />
       <h3>Demo AbortController</h3>
-      <p>This lab related to the article <i>Một vấn đề khi fetch API trong React</i></p>
+      <p>This lab related to the article <a href="/tutorials/mot-van-de-khi-fetch-api-trong-react/">Một vấn đề khi fetch API trong React</a></p>
       <h4>1. Reproduce problem using React useEffect</h4>
       <li>Normal case <a href="https://github.com/bkdev98/qckhnh.com/tree/master/src/components/lab/problem-fetch-api-react-hooks.js" target="__blank">[source code]</a></li>
       <DemoProblemReactHooks />
