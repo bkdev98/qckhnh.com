@@ -61,16 +61,19 @@ module.exports = {
               inlineCodeMarker: '÷',
             },
           },
+          `gatsby-remark-relative-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 1000,
+              withWebp: true,
               tracedSVG: true,
             },
           },
         ]
       }
     },
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

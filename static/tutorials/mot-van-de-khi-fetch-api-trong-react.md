@@ -11,7 +11,7 @@ Khi dùng React để fetch API, cả trong React Hooks `useEffect` hay với co
 
 Trong bài mình sử dụng hook `useState` cũng như `useEffect` và chỉ tập trung vào vấn đề fetch dữ liệu, nên nếu chưa biết về React Hooks bạn tham khảo qua [ở đây](https://reactjs.org/docs/hooks-effect.html) nhé!
 
-Các ví dụ chạy được kèm source code của bài viết nằm trong lab [Demo AbortController](https://qckhnh.com/lab/demo-abort-controller).
+Các ví dụ chạy được kèm source code của bài viết nằm trong lab [Demo AbortController](/lab/demo-abort-controller).
 
 ### Ví dụ mẫu
 
