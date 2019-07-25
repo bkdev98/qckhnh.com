@@ -75,6 +75,13 @@ module.exports = {
     },
     `gatsby-plugin-catch-links`,
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: '#333',
+        showSpinner: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `qckhnh.com`,
