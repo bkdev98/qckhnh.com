@@ -52,6 +52,22 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Bangers`,
+            subsets: [`latin-ext`, `vietnamese`],
+          },
+          {
+            family: `EB Garamond`,
+            variants: [`400`, `400i`, `700`, `700i`],
+            subsets: [`latin-ext`, `vietnamese`],
+          },
+        ],
+      },
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
