@@ -1,12 +1,13 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../layout"
 import SEO from "../components/seo"
 import Menu from "../components/menu"
 import "./style.css"
 
-const ProjectLayout = ({ data: { projects, project, prev, next } }) => (
+const ProjectLayout = ({ data: { projects, project, prev, next, thumbnail } }) => (
   <Layout>
     <SEO
       title={project.frontmatter.title}
@@ -15,7 +16,7 @@ const ProjectLayout = ({ data: { projects, project, prev, next } }) => (
     />
     <Menu prefix="/projects" data={projects.edges} selected={project.id} />
     <article>
-      {project.frontmatter.thumbnail && <img alt={project.frontmatter.title} src={project.frontmatter.thumbnail} />}
+      {project.frontmatter.thumbnail && <Img fluid={thumbnail.childImageSharp.fluid} />}
       <span style={{ marginRight: 20 }}>{project.frontmatter.title}</span>
       <span style={{ marginRight: 20 }}>{project.frontmatter.date}</span>
       <span>{project.frontmatter.description}</span>
@@ -29,7 +30,14 @@ const ProjectLayout = ({ data: { projects, project, prev, next } }) => (
 export default ProjectLayout
 
 export const project = graphql`
-  query($slug: String!, $prev: String, $next: String) {
+  query($slug: String!, $prev: String, $next: String, $thumbnail: String) {
+    thumbnail: file(relativePath: { eq: $thumbnail }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
     projects: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/projects/" } }
       sort: { fields: [frontmatter___date], order: DESC }

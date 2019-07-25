@@ -1,12 +1,13 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../layout"
 import SEO from "../components/seo"
 import Menu from "../components/menu"
 import "./style.css"
 
-const BlogLayout = ({ data: { articles, article, prev, next } }) => (
+const BlogLayout = ({ data: { articles, article, prev, next, thumbnail } }) => (
   <Layout>
     <SEO
       title={article.frontmatter.title}
@@ -15,7 +16,7 @@ const BlogLayout = ({ data: { articles, article, prev, next } }) => (
     />
     <Menu prefix="/blog" data={articles.edges} selected={article.id} />
     <article>
-      {article.frontmatter.thumbnail && <img alt={article.frontmatter.title} src={article.frontmatter.thumbnail} />}
+      {article.frontmatter.thumbnail && <Img fluid={thumbnail.childImageSharp.fluid} />}
       <div className="meta">
         <h1>{article.frontmatter.title}</h1>
         <i>Published on {article.frontmatter.date}</i>
@@ -30,7 +31,14 @@ const BlogLayout = ({ data: { articles, article, prev, next } }) => (
 export default BlogLayout
 
 export const artice = graphql`
-  query($slug: String!, $prev: String, $next: String) {
+  query($slug: String!, $prev: String, $next: String, $thumbnail: String) {
+    thumbnail: file(relativePath: { eq: $thumbnail }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
     articles: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/articles/" } }
       sort: { fields: [frontmatter___date], order: DESC }

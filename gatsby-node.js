@@ -14,6 +14,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 };
 
+function getThumbnailRelativePath(thumbnail) {
+  return path.basename(thumbnail);
+}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   return new Promise((resolve) => {
@@ -28,6 +32,9 @@ exports.createPages = ({ graphql, actions }) => {
               fields {
                 slug
               }
+              frontmatter {
+                thumbnail
+              }
             }
           }
         }
@@ -39,6 +46,9 @@ exports.createPages = ({ graphql, actions }) => {
             node {
               fields {
                 slug
+              }
+              frontmatter {
+                thumbnail
               }
             }
           }
@@ -53,6 +63,7 @@ exports.createPages = ({ graphql, actions }) => {
                 slug
               }
               frontmatter {
+                thumbnail
                 serie
               }
             }
@@ -85,6 +96,7 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve('./src/layout/blog.js'),
           context: {
             slug: node.fields.slug,
+            thumbnail: getThumbnailRelativePath(node.frontmatter.thumbnail),
             prev,
             next,
           },
@@ -94,6 +106,7 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve('./src/layout/blog.js'),
           context: {
             slug: node.fields.slug,
+            thumbnail: getThumbnailRelativePath(node.frontmatter.thumbnail),
             prev,
             next,
           },
@@ -107,6 +120,7 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve('./src/layout/project.js'),
           context: {
             slug: node.fields.slug,
+            thumbnail: getThumbnailRelativePath(node.frontmatter.thumbnail),
             prev,
             next,
           },
@@ -121,6 +135,7 @@ exports.createPages = ({ graphql, actions }) => {
           context: {
             slug: node.fields.slug,
             serie: node.frontmatter.serie || 'no-serie',
+            thumbnail: getThumbnailRelativePath(node.frontmatter.thumbnail),
             prev,
             next,
           },
@@ -131,6 +146,7 @@ exports.createPages = ({ graphql, actions }) => {
           context: {
             slug: node.fields.slug,
             serie: node.frontmatter.serie || 'no-serie',
+            thumbnail: getThumbnailRelativePath(node.frontmatter.thumbnail),
             prev,
             next,
           },
@@ -144,7 +160,7 @@ exports.createPages = ({ graphql, actions }) => {
             slug: node.fields.slug,
             title: node.frontmatter.title,
             description: node.frontmatter.description,
-            thumbnail: node.frontmatter.thumbnail,
+            thumbnail: getThumbnailRelativePath(node.frontmatter.thumbnail),
           },
         });
       });

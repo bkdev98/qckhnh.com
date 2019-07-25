@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 import moment from "moment"
-// import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
+import Img from "gatsby-image"
 
 import Layout from "../layout"
 import SEO from "../components/seo"
@@ -31,7 +32,7 @@ const data = [
   },
 ]
 
-const NowPage = () => {
+const NowPage = ({ data: { file } }) => {
   const [categories, setCategories] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
@@ -56,7 +57,7 @@ const NowPage = () => {
       <SEO title="Now" />
       <h3>What I'm doing now</h3>
       <div>
-        <img alt='avatar' style={{ maxWidth: 200 }} src='/assets/avatar.jpg' />
+        <Img fixed={file.childImageSharp.fixed} />
       </div>
       <i>Last updated {data[0].time}.</i>
       <p>{data[0].text}</p>
@@ -92,3 +93,15 @@ const NowPage = () => {
 }
 
 export default NowPage
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "avatar.jpg" }) {
+      childImageSharp {
+        fixed(width: 200, height: 200) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+  }
+`

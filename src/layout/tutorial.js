@@ -1,12 +1,13 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../layout"
 import SEO from "../components/seo"
 import Menu from "../components/menu"
 import "./style.css"
 
-const TutorialLayout = ({ data: { tutorials, article, prev, next, serie, sameSerie } }) => (
+const TutorialLayout = ({ data: { tutorials, article, prev, next, serie, sameSerie, thumbnail } }) => (
   <Layout>
     <SEO
       title={article.frontmatter.title}
@@ -15,7 +16,7 @@ const TutorialLayout = ({ data: { tutorials, article, prev, next, serie, sameSer
     />
     <Menu prefix="/tutorials" data={tutorials.edges} selected={article.id} />
     <article>
-      {article.frontmatter.thumbnail && <img alt={article.frontmatter.title} src={article.frontmatter.thumbnail} />}
+      {article.frontmatter.thumbnail && <Img fluid={thumbnail.childImageSharp.fluid} />}
       <div className="meta">
         <h1>{article.frontmatter.title}</h1>
         <i>Published on {article.frontmatter.date} {serie && <>, in <Link to={'/series' + serie.fields.slug}>{article.frontmatter.serie}</Link></>}</i>
@@ -36,7 +37,14 @@ const TutorialLayout = ({ data: { tutorials, article, prev, next, serie, sameSer
 export default TutorialLayout
 
 export const artice = graphql`
-  query($slug: String!, $prev: String, $next: String, $serie: String) {
+  query($slug: String!, $prev: String, $next: String, $serie: String, $thumbnail: String) {
+    thumbnail: file(relativePath: { eq: $thumbnail }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
     tutorials: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/tutorials/" } }
       sort: { fields: [frontmatter___date], order: DESC }

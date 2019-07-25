@@ -17,6 +17,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/static/assets`,
+        name: 'assets',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/static/articles`,
         name: 'articles',
       },
@@ -52,6 +59,13 @@ module.exports = {
             resolve: 'gatsby-remark-prismjs',
             options: {
               inlineCodeMarker: '÷',
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              tracedSVG: true,
             },
           },
         ]
