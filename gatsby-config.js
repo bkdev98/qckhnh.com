@@ -77,7 +77,7 @@ module.exports = {
               inlineCodeMarker: '÷',
             },
           },
-          `gatsby-remark-relative-images`,
+          // `gatsby-remark-relative-images`,
           // {
           //   resolve: `gatsby-remark-images`,
           //   options: {
