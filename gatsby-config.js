@@ -78,14 +78,14 @@ module.exports = {
             },
           },
           `gatsby-remark-relative-images`,
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1000,
-              withWebp: true,
-              tracedSVG: true,
-            },
-          },
+          // {
+          //   resolve: `gatsby-remark-images`,
+          //   options: {
+          //     maxWidth: 1000,
+          //     withWebp: true,
+          //     tracedSVG: true,
+          //   },
+          // },
         ]
       }
     },
