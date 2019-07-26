@@ -5,6 +5,7 @@ import Layout from "../layout"
 import SEO from "../components/seo"
 
 const data = [
+  { title: `About Schmidt`, dir: 'Alexander Payne', year: 2002, image: '/assets/about-schmidt.png' },
   { title: `Synecdoche, New York`, dir: 'Charlie Kaufman', year: 2008, image: '/assets/synecdoche.jpg' },
   { title: `Lost In Translation`, dir: 'Sofia Coppola', year: 2003, image: '/assets/lost-in-translations.jpg' },
   { title: `A Single Man`, dir: 'Tom Ford', year: 2009, image: '/assets/a-single-man.png' },
