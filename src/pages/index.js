@@ -7,31 +7,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <blockquote>
-      It’s just that the cause wasn’t real.
-      The cause was imagined.
-      The cause was fear.
-      Let’s leave the Jews out o
-      this just for a moment.
-      Let’s think of another minority.
-      One that…
-      One that can go unnoticed if it needs to.
-      There are all sorts of minorities,
-      blondes for example…
-      …or people with freckles.
-      But a minority is only
-      thought of as one…
-      …when it constitutes some kind of
-      threat to the majority.
-      A real threat or an imagined one.
-      And therein lies the fear.
-      If the minority is somehow invisible…
-      …and the fear is much greater.
-      That fear is why the
-      minority is persecuted.
-      So, you see there always is a cause.
-      The cause is fear.
-      Minorities are just people.
-      People like us.
+      A few times in my life I’ve had moments of absolute clarity. When for a few brief seconds the silence drowns out the noise and I can feel rather than think, and things seem so sharp and the world seems so fresh. It’s as though it had all just come into existence. I can never make these moments last. I cling to them, but like everything, they fade. I have lived my life on these moments. They pull me back to the present, and I realize that everything is exactly the way it was meant to be.
     </blockquote>
   </Layout>
 )
