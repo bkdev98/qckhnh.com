@@ -24,6 +24,9 @@ const Timestamp = ({ time }) => {
 
 const data = [
   {
+    time: 'August 06, 2019',
+    text: `Two drifters, off to see the world. There's such a lot of world to see.`,
+  }, {
     time: 'July 17, 2019',
     text: `Working remotely 🏝. A bit busy with both side and client projects, 4 at a time 🤷🏻‍. I have a crush on someone, and this feeling is wonderful, as it once was.`,
   }, {
