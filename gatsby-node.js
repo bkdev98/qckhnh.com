@@ -93,8 +93,7 @@ exports.createPages = ({ graphql, actions }) => {
         const next = index === articles.edges.length - 1 ? null : articles.edges[index + 1].node.fields.slug
         createPage({
           path: '/blog' + node.fields.slug,
-          // component: path.resolve('./src/layout/blog.js'),
-          component: path.resolve('./src/pages/index.js'),
+          component: path.resolve('./src/layout/blog.js'),
           context: {
             slug: node.fields.slug,
             thumbnail: getThumbnailRelativePath(node.frontmatter.thumbnail),
@@ -104,8 +103,7 @@ exports.createPages = ({ graphql, actions }) => {
         });
         createPage({
           path: node.fields.slug,
-          // component: path.resolve('./src/layout/blog.js'),
-          component: path.resolve('./src/pages/index.js'),
+          component: path.resolve('./src/layout/blog.js'),
           context: {
             slug: node.fields.slug,
             thumbnail: getThumbnailRelativePath(node.frontmatter.thumbnail),
@@ -119,8 +117,7 @@ exports.createPages = ({ graphql, actions }) => {
         const next = index === projects.edges.length - 1 ? null : projects.edges[index + 1].node.fields.slug
         createPage({
           path: '/projects' + node.fields.slug,
-          // component: path.resolve('./src/layout/project.js'),
-          component: path.resolve('./src/pages/index.js'),
+          component: path.resolve('./src/layout/project.js'),
           context: {
             slug: node.fields.slug,
             thumbnail: getThumbnailRelativePath(node.frontmatter.thumbnail),
@@ -134,8 +131,7 @@ exports.createPages = ({ graphql, actions }) => {
         const next = index === tutorials.edges.length - 1 ? null : tutorials.edges[index + 1].node.fields.slug
         createPage({
           path: '/tutorials' + node.fields.slug,
-          // component: path.resolve('./src/layout/tutorial.js'),
-          component: path.resolve('./src/pages/index.js'),
+          component: path.resolve('./src/layout/tutorial.js'),
           context: {
             slug: node.fields.slug,
             serie: node.frontmatter.serie || 'no-serie',
@@ -146,8 +142,7 @@ exports.createPages = ({ graphql, actions }) => {
         });
         createPage({
           path: node.fields.slug,
-          // component: path.resolve('./src/layout/tutorial.js'),
-          component: path.resolve('./src/pages/index.js'),
+          component: path.resolve('./src/layout/tutorial.js'),
           context: {
             slug: node.fields.slug,
             serie: node.frontmatter.serie || 'no-serie',
@@ -160,8 +155,7 @@ exports.createPages = ({ graphql, actions }) => {
       series.edges.forEach(({ node }) => {
         createPage({
           path: '/series' + node.fields.slug,
-          // component: path.resolve('./src/layout/serie.js'),
-          component: path.resolve('./src/pages/index.js'),
+          component: path.resolve('./src/layout/serie.js'),
           context: {
             slug: node.fields.slug,
             title: node.frontmatter.title,
