@@ -4,7 +4,7 @@ description: >-
   Đối với hắn mỗi ngày thức dậy, một tiếng một lần lại nhìn ra bầu trời, hắn ước
   mong có được đôi cánh thật to rộng để sải cánh bay đi.
 thumbnail: /assets/theo-may-tren-cao.jpg
-date: '2019-08-14'
+date: '2019-08-13'
 ---
 Đối với hắn mỗi ngày thức dậy, một tiếng một lần lại nhìn ra bầu trời, hắn ước mong có được đôi cánh thật to rộng để sải cánh bay đi.
 
