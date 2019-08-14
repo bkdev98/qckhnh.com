@@ -3,7 +3,7 @@ title: Điều đẹp đẽ nhất
 description: >-
   Lâu rồi tôi có đọc ở đâu đấy, thứ buồn bã và lặng lẽ nhất của con người, là
   chiếc bóng của họ.
-thumbnail: /assets/dieu-dep-de-nhat.jpg
+thumbnail: /assets/dieu-dep-de-nhat.png
 date: '2019-08-14'
 ---
 Lâu rồi tôi có đọc ở đâu đấy, thứ buồn bã và lặng lẽ nhất của con người, là chiếc bóng của họ. Nó không thể nói chuyện, cũng không thể nhìn thấy rõ mình, phải có ánh sáng mới có thể xuất hiện. Một cuộc đời mờ ảo, phụ thuộc, và tan dần khi người ta chết đi.
