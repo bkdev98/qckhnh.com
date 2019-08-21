@@ -1,16 +1,19 @@
 import { Link } from "gatsby"
 import React, { useState } from "react"
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+// import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import Lottie from 'react-lottie'
 
 // import welcomeAnimation from '../assets/animations/welcome.json'
-import sparkleAnimation from '../assets/animations/sparkle.json'
-import tracksAnimation from '../assets/animations/tracks.json'
-import moviesAnimation from '../assets/animations/movies.json'
-import hurraaaAnimation from '../assets/animations/hurraaa.json'
+// import sparkleAnimation from '../assets/animations/sparkle.json'
+// import tracksAnimation from '../assets/animations/tracks.json'
+// import moviesAnimation from '../assets/animations/movies.json'
+// import hurraaaAnimation from '../assets/animations/hurraaa.json'
 
 const Header = () => {
-  const [count, setCount] = useState(0);
+  const [
+    count,
+    // setCount,
+  ] = useState(0);
   const [animationData, setAnimationData] = useState(null);
 
   return (
@@ -19,7 +22,7 @@ const Header = () => {
         <Link to="/" style={{ display: 'inline-block' }}>
           q<span style={{ textDecoration: 'line-through' }}>uo</span>c kh<span style={{ textDecoration: 'line-through' }}>a</span>nh
         </Link>
-        <ThemeToggler>
+        {/* <ThemeToggler>
           {({ theme, toggleTheme }) => (
             <span
               style={{ cursor: 'pointer', marginTop: 3 }}
@@ -40,7 +43,7 @@ const Header = () => {
               {theme === 'dark' ? '☀' : '☾'}
             </span>
           )}
-        </ThemeToggler>
+        </ThemeToggler> */}
       </span>
       <ul>
         {count > 4  && <li><Link partiallyActive={true} to="/now" activeClassName="active">now</Link></li>}

@@ -16,10 +16,10 @@ body {
   background: var(--bg);
 }
 
-body.dark {
+/* body.dark {
   --bg: #333;
   --text: #fff;
-}
+} */
 
 .layout {
   max-width: 1140px;
