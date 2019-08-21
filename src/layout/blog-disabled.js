@@ -8,12 +8,12 @@ import Menu from "../components/menu"
 
 const IndexPage = ({ data: { image, articles, article } }) => (
   <Layout>
-    <SEO title="Sorry, this post is being tired & lonely." />
+    <SEO title="Not available" />
     <Menu prefix="/blog" data={articles.edges} selected={article.id} />
     <div style={{ maxWidth: '100%', overflow: 'hidden', marginTop: 20 }}>
       <Img style={{ maxWidth: 500, maxHeight: 500 }} fixed={image.childImageSharp.fixed} />
     </div>
-    <i>Sorry, this post is being tired & lonely.</i>
+    <i>Not available</i>
   </Layout>
 )
 
