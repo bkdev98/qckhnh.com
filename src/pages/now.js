@@ -24,6 +24,13 @@ const Timestamp = ({ time }) => {
 
 const data = [
   {
+    time: 'September 02, 2019',
+    text: `Đêm qua trở thành đêm buồn nhất từ hồi lên Sài Gòn.
+    Cũng chẳng sao, cũng có gì có sao đâu.
+    Mà nghĩ, mới lượn một vòng lại đến tháng 9.
+    Cuộc đời bây giờ trong lành và yên tĩnh, cả một giọt mưa cũng nghe như mùi thơm tho rơi trọn vào lòng.
+    Kéo rèm lại và đặt báo thức, vậy là chẳng cần ai gọi dậy khi tháng 9 đi qua.`,
+  }, {
     time: 'August 14, 2019',
     text: `Mải tìm kiếm trong vạn thứ vu vơ ngoài kia, một thứ dành riêng cho mình.`,
   }, {

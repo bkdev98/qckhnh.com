@@ -46,7 +46,7 @@ const Header = () => {
         </ThemeToggler> */}
       </span>
       <ul>
-        {count > 4  && <li><Link partiallyActive={true} to="/now" activeClassName="active">now</Link></li>}
+        {count > -1  && <li><Link partiallyActive={true} to="/now" activeClassName="active">now</Link></li>}
         <li><Link partiallyActive={true} to="/tutorials" activeClassName="active">tutorials</Link></li>
         <li><Link partiallyActive={true} to="/blog" activeClassName="active">blog</Link></li>
         <li><Link partiallyActive={true} to="/projects" activeClassName="active">projects</Link></li>
