@@ -104,8 +104,8 @@ exports.createPages = ({ graphql, actions }) => {
         });
         createPage({
           path: node.fields.slug,
-          // component: path.resolve('./src/layout/blog.js'),
-          component: path.resolve('./src/layout/blog-disabled.js'),
+          component: path.resolve('./src/layout/blog.js'),
+//           component: path.resolve('./src/layout/blog-disabled.js'),
           context: {
             slug: node.fields.slug,
             thumbnail: getThumbnailRelativePath(node.frontmatter.thumbnail),
