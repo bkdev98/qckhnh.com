@@ -15,7 +15,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 };
 
 function getThumbnailRelativePath(thumbnail) {
-  return path.basename(thumbnail);
+  if (typeof thumbnail === 'string') {
+    return path.basename(thumbnail);
+  }
+  return null;
 }
 
 exports.createPages = ({ graphql, actions }) => {
