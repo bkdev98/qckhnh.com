@@ -24,6 +24,10 @@ const Timestamp = ({ time }) => {
 
 const data = [
   {
+    time: 'December 15, 2019',
+    text: 'Burnout a bit, and sad, lot of sad. But not going anywhere anytime soon. Obviously.',
+  },
+  {
     time: 'September 02, 2019',
     text: `Đêm qua trở thành đêm buồn nhất từ hồi lên Sài Gòn.
     Cũng chẳng sao, cũng có gì có sao đâu.
