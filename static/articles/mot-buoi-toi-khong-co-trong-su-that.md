@@ -21,7 +21,9 @@ mãi mãi.
 
 cơn suối dữ đã yên
 
-lại nhớ về buổi sáng ấy
+chừng như còn sót lại buổi sáng năm xưa
+
+vẹn nguyên
 
 “thế kỷ chúng ta còn đang tiếp tục
 
