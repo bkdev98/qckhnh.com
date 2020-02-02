@@ -5,6 +5,8 @@ description: |
 thumbnail: /assets/mot-buoi-toi-khong-co-trong-su-that.jpg
 date: '2020-02-02'
 ---
+&nbsp;
+
 im lặng
 
 mặt đất đỏ như màu gạch nung
@@ -15,8 +17,7 @@ giữa mênh mông tôi gọi tôi
 
 mãi mãi.
 
-
-
+&nbsp;
 
 cơn suối dữ đã yên
 
@@ -28,8 +29,7 @@ trên trái đất này
 
 hay dừng lại nơi đây”.
 
-
-
+&nbsp;
 
 tôi nói với anh
 
@@ -39,8 +39,7 @@ rằng tất thảy sự sống này
 
 chỉ có một mình ở đây.
 
-
-
+&nbsp;
 
 ánh trăng vàng và ánh sao
 

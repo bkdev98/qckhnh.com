@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|EB+Garamond:400,400i,500,500i&display=swap&subset=latin-ext,vietnamese');
+
 html {
   font: 17.5px 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
   -ms-text-size-adjust: 100%;
@@ -30,6 +32,11 @@ body {
   min-height: 100%;
 }
 
+.blog-title {
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
 header {
   float: left;
   margin: 0 auto;
@@ -54,7 +61,7 @@ main {
 }
 
 .nav:hover {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 header a {
@@ -189,7 +196,7 @@ pre[class*="language-"] {
 .html-content a {
   color: var(--text);
   /* font-style: italic; */
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .gatsby-highlight-code-line {
@@ -204,7 +211,7 @@ pre[class*="language-"] {
 
 .about a {
   color: var(--text);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 a {

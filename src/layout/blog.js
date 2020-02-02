@@ -18,7 +18,7 @@ const BlogLayout = ({ data: { articles, article, prev, next, thumbnail } }) => (
     <article>
       {article.frontmatter.thumbnail && <Img fluid={thumbnail.childImageSharp.fluid} />}
       <div className="meta">
-        <h1>{article.frontmatter.title}</h1>
+        <h1 className="blog-title">{article.frontmatter.title}</h1>
         <i>Published on {article.frontmatter.date}</i>
       </div>
       <div className="html-content" dangerouslySetInnerHTML={{ __html: article.html }} />
