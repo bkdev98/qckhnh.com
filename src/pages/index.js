@@ -11,9 +11,9 @@ const IndexPage = ({ data: { file } }) => (
     <div style={{ maxWidth: '100%', overflow: 'hidden' }}>
       <Img style={{ maxWidth: 500, maxHeight: 500 }} fixed={file.childImageSharp.fixed} />
     </div>
-    <blockquote>
+    {/* <blockquote>
       tạm đóng cửa để bảo trì người viết
-    </blockquote>
+    </blockquote> */}
   </Layout>
 )
 

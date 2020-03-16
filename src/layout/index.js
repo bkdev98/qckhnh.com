@@ -5,7 +5,7 @@ import "./style.css"
 
 const Layout = ({ children }) => (
   <div className="layout">
-    {/* <Header /> */}
+    <Header />
     <main>{children}</main>
   </div>
 )
