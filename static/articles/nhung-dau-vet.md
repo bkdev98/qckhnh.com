@@ -15,6 +15,6 @@ sự im lặng và tàn nhẫn, thản nhiên nằm đó, không mời gọi. nh
 
 mặt tôi không hề hiện diện bằng cái mặt, điều duy nhất mà ta đang có là một hiện diện để sống, và để chết.
 
-just kill me, no need for any reason!? death without reason, inside something, forgotten, inside a painful sadness, inside a memory, it has not (yet) gone away the smell of the corpse decomposing until it is diluted into the void.
+_just kill me, no need for any reason!? death without reason, inside something, forgotten, inside a painful sadness, inside a memory, it has not (yet) gone away the smell of the corpse decomposing until it is diluted into the void._
 
 bây giờ, tôi vẽ một vòng tròn trên đất, và tôi lún sâu mãi xuống đất cứng, cho tới khi hoàn toàn lạnh vắng, và tôi sẽ không trở về.
