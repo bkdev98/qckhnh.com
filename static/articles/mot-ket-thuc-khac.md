@@ -1,0 +1,6 @@
+---
+title: một kết thúc khác
+thumbnail: /assets/mot-ket-thuc-khac.jpeg
+date: '2020-06-18'
+---
+li ti hơi gió theo những cú lăn, lăn vào trong bao khắc giờ, đã ngậm bao nhiêu giọng quê, có nghe không, tiếng trẻ con khóc mớ mưa khuya, mưa đói, mưa no, tiếng đói, tiếng no, phố xá rầm rập xuyên cơn ngủ, đêm chạy tới đâu thì khuya, đêm tầm gai hoang đường, đêm nhặt màu đen tối, đêm dụm bao tràng cười giòn dại những mưa xưa, mưa xưa đổ tới nẻo nào thì hóa mưa nay, mưa nay dài, mưa bào mòn da đêm, mưa nay xiết họng khuya, mưa bọc ủ bầy ngón lạ, còi rúc, lại giật thột rồi, có nghe gì không, xác xơ cây lá rừng già, nghe hơi thở biển lại tràn lên, lạnh buốt và khuya khoắt, hay lại đã sắp nắng sớm chiều, có nghe những rì rầm ban mai muôn trùng, nỗi nhẫn nại tích tụ màu của những trái thanh long cứ đỏ rồi xanh rồi đỏ nữa, đấy thôi, có nghe gì không, này bạn đồng hành, đâu rồi, hẵng cứ thu lu một giọt tròn ngồi yên mép cửa, ô kính nhòe, đâu rồi, ở lại với ô vuông này chút nữa, đây, chớ vội mỏng tang thế, đã nghe được gì đâu, nguồn hơi nào tụ, điểm mây nào lìa bầy, đã sa mấy tầng trời và sẽ lăn qua bao nhiêu khoảng không và đậu lại nẻo nào của đất, tạm biệt à, cứ lẫn vào những sợi mưa dài mà biến tan đi thế à, không đầu và không cuối, không biết rồi sẽ đậu lại nẻo nào của đất à, thật à, uh, thôi,
