@@ -31,7 +31,9 @@ const TutorialLayout = ({ data: { tutorials, article, prev, next, serie, sameSer
     )}
     {prev && <Link className="nav" to={'/tutorials' + prev.fields.slug}>← previous</Link>}
     {next && <Link className="nav" to={'/tutorials' + next.fields.slug}>next →</Link>}
-    <div style={{marginTop: 20, marginBottom: 20}} dangerouslySetInnerHTML={{__html: '<iframe src="https://github.com/sponsors/bkdev98/card" title="Sponsor bkdev98" height="225" width="600" style="border: 0;"></iframe>'}} />
+    <div style={{marginTop: 20, marginBottom: 20}}>
+      <span>Send support to Quoc Khanh: </span><div dangerouslySetInnerHTML={{__html: '<iframe src="https://github.com/sponsors/bkdev98/button" title="Sponsor bkdev98" height="35" width="107" style="border: 0;"></iframe>'}} />
+    </div>
   </Layout>
 )
 
