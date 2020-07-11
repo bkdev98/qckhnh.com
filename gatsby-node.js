@@ -96,7 +96,7 @@ exports.createPages = ({ graphql, actions }) => {
         const next = index === articles.edges.length - 1 ? null : articles.edges[index + 1].node.fields.slug
         createPage({
           path: '/blog' + node.fields.slug,
-          component: path.resolve('./src/layout/blog-disabled.js'),
+          component: node.fields.slug.includes('mot-ket-thuc-khac') ? path.resolve('./src/layout/blog.js') : path.resolve('./src/layout/blog-disabled.js'),
           context: {
             slug: node.fields.slug,
             thumbnail: getThumbnailRelativePath(node.frontmatter.thumbnail),
@@ -106,7 +106,7 @@ exports.createPages = ({ graphql, actions }) => {
         });
         createPage({
           path: node.fields.slug,
-          component: path.resolve('./src/layout/blog-disabled.js'),
+          component: node.fields.slug.includes('mot-ket-thuc-khac') ? path.resolve('./src/layout/blog.js') : path.resolve('./src/layout/blog-disabled.js'),
           context: {
             slug: node.fields.slug,
             thumbnail: getThumbnailRelativePath(node.frontmatter.thumbnail),
